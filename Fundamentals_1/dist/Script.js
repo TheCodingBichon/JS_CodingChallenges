@@ -59,3 +59,18 @@ else if (avgScoreCoalas === avgScoreDolphins &&
 else {
     console.log(`No one wins the trophy !!!`);
 }
+// Coding challenge #4
+const bill = [275, 40, 430];
+const stevensCountryTipLower = 0.15;
+const stevensCountryTipHigher = 0.2;
+const tip = function (arr) {
+    arr.forEach(function (price) {
+        if (price > 50) {
+            return console.log(`The bill was ${price}, the tip was ${price * stevensCountryTipLower}, and the total value ${price + price * stevensCountryTipLower}`);
+        }
+        else {
+            return console.log(`The bill was ${price}, the tip was ${price * stevensCountryTipHigher}, and the total value ${price + price * stevensCountryTipHigher}`);
+        }
+    });
+};
+const calculatedTip = tip(bill);
