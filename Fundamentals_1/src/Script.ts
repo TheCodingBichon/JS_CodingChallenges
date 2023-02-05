@@ -84,7 +84,7 @@ const bill: number[] = [275, 40, 430];
 const stevensCountryTipLower: number = 0.15;
 const stevensCountryTipHigher: number = 0.2;
 
-const tip = function (arr) {
+const tip = function (arr: number[]): void {
   arr.forEach(function (price) {
     if (price > 50) {
       return console.log(
